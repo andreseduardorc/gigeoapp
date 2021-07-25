@@ -1,0 +1,19 @@
+.bio {
+    display: flex;
+    padding: 1rem 2rem 0 2rem;
+}
+
+.bio__photo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.bio__text {
+    margin-left: 1rem;
+    font-family: $roboto;
+}
+
+.bio__text p {
+    color: $darkCian;
+}

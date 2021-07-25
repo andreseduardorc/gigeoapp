@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <title>gigeo</title>
 </head>
 
@@ -14,112 +17,123 @@
 
     <!--navegacion-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">GIGEO</a>
-        <p>ART</p>
+        <a class="navbar-brand logo" href="#">GIGEO</a>
+        <p class="logo__parrafo">ART</p>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-
-                <i class="fas fa-search"></i>
-                <i class="fas fa-video"></i>
-                <i class="fas fa-plus"></i>
-                <i class="far fa-bell"></i>
-                <span class="navbar-toggler-icon"></span>
+                <section class="icon">
+                    <i class="fas fa-search icon__space"></i>
+                    <i class="fas fa-video icon__space"></i>
+                    <i class="fas fa-plus icon__space"></i>
+                    <i class="far fa-bell icon__space"></i>
+                    <span class="navbar-toggler-icon"></span>
+                </section>
             </ul>
         </div>
     </nav>
 
     <!-- banner-->
 
-
-    <section class="container-fluid">
-        <img src="./assets/img/image-banner.png" alt="banner">
-    </section>
+    <div class="container-fluid banner">
+        <section class="banner__background">
+            <img src="./assets/img/image-banner.png" alt="background">
+        </section>
+    </div>
     <header class="container">
 
         <!--biografia-->
-        <section class="biography">
-            <img src="./assets/img/profile-image.png" alt="profile">
-            <h2>Yuki Mukami</h2>
-            <p>30.000 segudores</p>
-
-            <section class="buttons">
-                <button type="button" class="btn btn-primary">Mensaje</button>
-                <button type="button" class="btn btn-secondary">Seguir</button>
+        <section class="bio">
+            <img class="bio__photo" src="./assets/img/profile-image.png" alt="profile">
+            <div class="bio__text">
+                <h2>Yuki Mukami</h2>
+                <p>30.000 seguidores</p>
+            </div>
+            <section class="buttons d-none d-md-inline-block ml-auto">
+                <button type="button" class="btn buttons__1">Mensaje</button>
+                <button type="button" class="btn buttons__2">Seguir</button>
 
             </section>
 
         </section>
-        <h2>Videos Populares</h2>
-        <div class="">
+        <hr>
+        <div class="container">
+            <h2 class="title">Videos Populares</h2>
+
+            <div class="row ">
 
 
-            <div class="central row">
+                <div class=" col-md-3 col-sm-12">
+                    <section class="central m-auto" style="width: 16rem;">
+                        <img class="central__img" src="./assets/img/image-1.png" alt="imagen1">
+                        <h3 class="central__text">Después de la vela - Yuki Mukami
+                        </h3>
+                        <p class="central__text_parrafo">16k vistas - 1 semana atrás</p>
+                    </section>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                    <section class="central m-auto" style="width: 16rem;">
+                        <img class="central__img" src="./assets/img/image-2.png" alt="imagen1">
+                        <h3 class="central__text">Far Away - Yuki Mukami
+                        </h3>
+                        <p class="central__text__parrafo">100k vistas - 1 mes atrás</p>
+                    </section>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <section class="central m-auto" style="width: 16rem;">
+                        <img class="central__img" src="./assets/img/image-3.png" alt="imagen1">
+                        <h3 class="central__text">City - Yuki Mukami
+                        </h3>
+                        <p class="central__text_parrafo">20k vistas - 1 mes atrás</p>
+                    </section>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <section class="central m-auto" style="width: 16rem;">
+                        <img class="central__img" src="./assets/img/image-4.png" alt="imagen1">
+                        <h3 class="central__text">A Yuki Tale - Yuki Mukami
+                        </h3>
+                        <p class="central__text__parrafo">1m vistas - 1 año atrás</p>
+                    </section>
+                </div>
 
 
+                <div class="col-md-3 col-sm-12">
+                    <section class="central m-auto" style="width: 16rem;">
+                        <img class="central__img" src="./assets/img/image-5.png" alt="imagen1">
+                        <h3 class="central__text">Mapocho - Yuki Mukami
+                        </h3>
+                        <p class="central__text_parrafo">100k vistas - 1 mes atrás</p>
+                    </section>
+                </div>
+                <div class="col-md-3 col-sm-12">
 
-                <section class="central__video col-3 ">
-                    <img src="./assets/img/image-1.png" alt="imagen1">
-                    <h3>Después de la vela - Yuki Mukami
-                    </h3>
-                    <p>16k vistas - 1 semana atrás</p>
-                </section>
-
-                <section class="central__video col-3">
-                    <img src="./assets/img/image-2.png" alt="imagen1">
-                    <h3>Far Away - Yuki Mukami
-                    </h3>
-                    <p>100k vistas - 1 mes atrás</p>
-                </section>
-
-                <section class="central__video col-3 ">
-                    <img src="./assets/img/image-3.png" alt="imagen1">
-                    <h3>City - Yuki Mukami
-                    </h3>
-                    <p>20k vistas - 1 mes atrás</p>
-                </section>
-
-                <section class="central__video col-3 ">
-                    <img src="./assets/img/image-4.png" alt="imagen1">
-                    <h3>A Yuki Tale - Yuki Mukami
-                    </h3>
-                    <p>1m vistas - 1 año atrás</p>
-                </section>
-
-
-
-
-                <section class="central__video col-lg-3">
-                    <img src="./assets/img/image-5.png" alt="imagen1">
-                    <h3>Mapocho - Yuki Mukami
-                    </h3>
-                    <p>100k vistas - 1 mes atrás</p>
-                </section>
-
-                <section class="central__video col-lg-3">
-                    <img src="./assets/img/image-6.png" alt="imagen1">
-                    <h3>Luky Days - Yuki Mukami
-                    </h3>
-                    <p>40k vistas - 3 meses atrás</p>
-                </section>
-
-                <section class="central__video col-lg-3">
-                    <img src="./assets/img/image-7.png" alt="imagen1">
-                    <h3>30 days in My House
-                    </h3>
-                    <p>10k vistas - 4 meses atrás</p>
-                </section>
-
-                <section class="central__video col-lg-3">
-                    <img src="./assets/img/image-8.png" alt="imagen1">
-                    <h3>Santiago - Yuki Mukami
-                    </h3>
-                    <p>40k vistas - 3 mese atrás</p>
-                </section>
-
+                    <section class="central m-auto" style="width: 16rem;">
+                        <img class="central__img" src="./assets/img/image-6.png" alt="imagen1">
+                        <h3 class="central__text">Luky Days - Yuki Mukami
+                        </h3>
+                        <p class="central__text_parrafo">40k vistas - 3 meses atrás</p>
+                    </section>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <section class="central m-auto" style="width: 16rem;">
+                        <img class="central__img" src="./assets/img/image-7.png" alt="imagen1">
+                        <h3 class="central__text">30 days in My House
+                        </h3>
+                        <p class="central__text_parrafo">10k vistas - 4 meses atrás</p>
+                    </section>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <section class="central m-auto" style="width: 16rem;">
+                        <img class="central__img" src="./assets/img/image-8.png" alt="imagen1">
+                        <h3 class="central__text">Santiago - Yuki Mukami
+                        </h3>
+                        <p class="central__text__parrafo">40k vistas - 3 meses atrás</p>
+                    </section>
+                </div>
             </div>
         </div>
 
