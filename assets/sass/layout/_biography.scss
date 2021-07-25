@@ -1,6 +1,9 @@
 .bio {
     display: flex;
     padding: 1rem 2rem 0 2rem;
+    @media(max-width: 767.9px){
+        justify-content: center;
+    }
 }
 
 .bio__photo {

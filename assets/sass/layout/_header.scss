@@ -1,11 +1,13 @@
 .banner {
-    width: 100%;
     height: 200px;
     overflow: hidden;
     position: relative;
-    .banner__background {
+    background-image: url('../img/image-banner.png');
+    background-position: center center;
+    &__background {
         position: absolute;
         top: -340px;
+        left: 0px;
     }
 }
 
@@ -21,11 +23,11 @@
 }
 
 .central {
-    margin: 1rem;
+    width: 100%;
 }
 
 .central__img {
-    width: 16rem;
+    width: 100%;
 }
 
 .central__text {

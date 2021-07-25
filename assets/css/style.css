@@ -9954,14 +9954,16 @@ h3 {
 }
 
 .banner {
-  width: 100%;
   height: 200px;
   overflow: hidden;
   position: relative;
+  background-image: url("../img/image-banner.png");
+  background-position: center center;
 }
-.banner .banner__background {
+.banner__background {
   position: absolute;
   top: -340px;
+  left: 0px;
 }
 
 .title {
@@ -9978,11 +9980,11 @@ h3 {
 }
 
 .central {
-  margin: 1rem;
+  width: 100%;
 }
 
 .central__img {
-  width: 16rem;
+  width: 100%;
 }
 
 .central__text {
@@ -9999,6 +10001,11 @@ h3 {
 .bio {
   display: flex;
   padding: 1rem 2rem 0 2rem;
+}
+@media (max-width: 767.9px) {
+  .bio {
+    justify-content: center;
+  }
 }
 
 .bio__photo {
